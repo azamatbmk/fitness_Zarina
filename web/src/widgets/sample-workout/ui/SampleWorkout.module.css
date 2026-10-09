@@ -1,0 +1,43 @@
+.layout {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.copy {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 32rem;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.text {
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.88;
+}
+
+.frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-line-light);
+  background:
+    linear-gradient(135deg, rgba(232, 78, 46, 0.18), transparent 55%),
+    #1c2220;
+  color: rgba(243, 244, 241, 0.75);
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: var(--space-8);
+  }
+}

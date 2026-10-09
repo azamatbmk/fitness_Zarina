@@ -1,0 +1,39 @@
+.formBlock {
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--color-line);
+}
+
+.formIntro {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 36rem;
+}
+
+.formTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+}
+
+.formText {
+  margin: 0;
+  color: var(--color-ink-soft);
+  line-height: 1.55;
+}
+
+.fallback {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+@media (min-width: 800px) {
+  .formBlock {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+    padding: var(--space-6);
+  }
+}

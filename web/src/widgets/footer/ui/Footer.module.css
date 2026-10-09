@@ -1,0 +1,30 @@
+.root {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding-block: var(--space-7);
+}
+
+.inner {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.text,
+.copy {
+  margin: 0;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+.copy {
+  margin-top: var(--space-3);
+  font-size: 0.85rem;
+}
